@@ -17,4 +17,5 @@ application-create:
 
 application-delete:
 	kustomize build application | kubectl delete -f -
-	
+
+clean-up: application-delete cluster-delete
