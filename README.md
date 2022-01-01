@@ -63,8 +63,11 @@
 *For the first time application will require intitial configuration*
 
 # Clean up
+**Delete application and local cluster**
 
-
+```bash
+    make clean-up
+```
 
 # TODO 
 - [x] Install required tools
