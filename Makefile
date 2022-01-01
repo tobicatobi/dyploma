@@ -7,7 +7,7 @@ cluster-delete:
 	kind delete cluster --name test-cluster
 
 application-expose:
-	kubectl port-forward svc/wordpress 8080:80&
+	pkill  port-forward; kubectl port-forward svc/wordpress 8080:80&
 
 secret-create:
 	kubectl create secret generic --from-literal=password=SuperPassword mysql-pass

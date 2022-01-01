@@ -1,4 +1,4 @@
-apiVersion: apps/v1.,
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: wordpress-mysql
@@ -14,8 +14,7 @@ spec:
   template:
     metadata:
       labels:
-      }
-       app: wordpress
+        app: wordpress
         tier: mysql
     spec:
       containers:

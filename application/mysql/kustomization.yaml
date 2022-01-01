@@ -4,6 +4,7 @@ resources:
   - deployment.yaml
   - pvc.yaml
   - service.yaml
+  - network-policy.yaml
 
 secretGenerator:
 - name: mysql-pass
